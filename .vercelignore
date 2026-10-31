@@ -1,0 +1,11 @@
+# Raw source material — kept in git, never published to the web.
+# Screen recording, the soundtrack MP3 and unrelated clips live here.
+unedited/
+
+# Repo plumbing and local tooling
+.git/
+.gitignore
+.vercel/
+
+# Documentation stays on GitHub rather than the public site
+README.md

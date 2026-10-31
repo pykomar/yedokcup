@@ -15,6 +15,8 @@ Every goal is a full broadcast takeover: a new score, a unique motion cut, a liv
 
 ## Files
 
+- `index.html` — the landing page served at `/` on Vercel; links the board, both films, the stills and the downloads.
+- `.vercelignore` — keeps `unedited/` raw source and this README out of the public deployment.
 - `liga-malaysia-scoreboard.html` — the interactive scoreboard.
 - `assets/logos/` — current team crests (`ultimate-titan.png`, `yedok.png`, `avernus.png`, `isba.png`) plus the original supplied crests.
 - `yedok-sport-cup-preview.png` — current Yedok' Sport Cup board at 1600×900.
@@ -163,6 +165,15 @@ Useful for exporting stills without timing the animation:
 - `?capture=jdt&t=700` etc. — the `t` value is in milliseconds.
 
 Capture mode pauses all page animations at the chosen point, so it is deterministic for screenshots.
+
+## Deploying to Vercel
+
+This is a static site: **no build step, no framework and no `npm install`**. Vercel's "no framework detected" message is expected and harmless — it serves the files exactly as they sit in the repo.
+
+- **Framework preset:** Other · **Build command:** empty · **Output directory:** empty (repo root).
+- `index.html` is the entry point, so `/` resolves. Without it the deployment is live but the root path 404s, even though every `.html` file already works by name.
+- `.vercelignore` drops `unedited/` (raw recordings and the soundtrack MP3) and `README.md` from the upload.
+- Any push to `main` redeploys production; a push to another branch gives a preview URL.
 
 ## Design notes
 
