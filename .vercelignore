@@ -1,11 +1,9 @@
-# Raw source material — kept in git, never published to the web.
-# Screen recording, the soundtrack MP3 and unrelated clips live here.
+# Never uploaded: raw source and the legacy film-making folder.
+# The Next app only serves /app and /public, but keeping these out of the
+# upload makes deployments smaller and faster.
 unedited/
-
-# Repo plumbing and local tooling
-.git/
-.gitignore
-.vercel/
-
-# Documentation stays on GitHub rather than the public site
+production/
 README.md
+
+# Local scratch
+.scratch/

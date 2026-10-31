@@ -2,8 +2,28 @@
 # Screen recordings, soundtrack audio and unrelated clips live here.
 unedited/
 
+# Legacy production pages and masters, kept for re-cutting films.
+# Deployed? No — the Next app never serves this folder.
+production/
+
+# Dependencies and build output
+node_modules/
+.next/
+out/
+.pnpm-store/
+.pnpm-cache/
+
+# TypeScript / Next generated
+next-env.d.ts
+*.tsbuildinfo
+
+# Env and local tooling
+.env*.local
+.vercel
+
 # Local scratch
 *.bundle
 *.tmp
+.scratch/
 Thumbs.db
 .DS_Store
