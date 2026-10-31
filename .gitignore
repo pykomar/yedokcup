@@ -1,0 +1,9 @@
+# Raw source material — kept on this machine, never committed.
+# Screen recordings, soundtrack audio and unrelated clips live here.
+unedited/
+
+# Local scratch
+*.bundle
+*.tmp
+Thumbs.db
+.DS_Store
