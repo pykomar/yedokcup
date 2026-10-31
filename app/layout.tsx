@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Anton, Barlow_Condensed, JetBrains_Mono } from 'next/font/google';
-import './globals.css';
 
 const display = Anton({
   weight: '400',
